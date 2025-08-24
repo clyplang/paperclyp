@@ -1,0 +1,33 @@
+{
+  "clyp-if": {
+    "prefix": "if",
+    "body": [
+      "if ${1:cond} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "if block"
+  },
+  "clyp-function": {
+    "prefix": "function",
+    "body": [
+      "function ${1:name}(${2:args}) returns ${3:null} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "function template"
+  },
+  "clyp-class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:Name} {",
+      "\t${2:int} ${3:field} = ${4:0}",
+      "",
+      "\t${5:method}(self) returns null: {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "class template"
+  }
+}

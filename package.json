@@ -1,0 +1,50 @@
+{
+  "name": "paperclyp",
+  "displayName": "PaperClyp",
+  "description": "Syntax highlighting and basic editor support for the Clyp language.",
+  "version": "0.0.1",
+  "publisher": "clyplang",
+  "icon": "resources/icon.png",
+  "pricing": "Free",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "clyp",
+        "aliases": [
+          "Clyp",
+          "clyp"
+        ],
+        "extensions": [
+          ".clyp"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "clyp",
+        "scopeName": "source.clyp",
+        "path": "./syntaxes/clyp.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "clyp",
+        "path": "./syntaxes/snippets.code-snippets"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}
