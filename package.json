@@ -6,6 +6,10 @@
   "publisher": "clyplang",
   "icon": "resources/icon.png",
   "pricing": "Free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clyplang/paperclyp.git"
+  },
   "engines": {
     "vscode": "^1.70.0"
   },
